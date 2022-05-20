@@ -6,7 +6,7 @@
 @section('content')
 <ul>
     @foreach($cars as $car)
-    <li>{{$car->producer}}</li>
+    <li><a href="/car/{{$car->id}}">{{$car->producer}}</a></li>
     @endforeach
 </ul>
 @endsection
